@@ -180,13 +180,6 @@ $GLOBALS['TCA']['tt_content']['columns']['background_image'] = [
         'appearance' => [
             'createNewRelationLinkTitle' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:images.addFileReference',
         ],
-        'overrideChildTca' => [
-            'types' => [
-                \TYPO3\CMS\Core\Resource\File::FILETYPE_IMAGE => [
-                    'showitem' => 'crop,--palette--;;filePalette',
-                ],
-            ],
-        ],
     ],
     'l10n_mode' => 'exclude',
 ];
