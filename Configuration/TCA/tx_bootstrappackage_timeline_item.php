@@ -221,13 +221,6 @@ return [
                 'appearance' => [
                     'createNewRelationLinkTitle' => 'LLL:EXT:frontend/Resources/Private/Language/Database.xlf:tt_content.asset_references.addFileReference',
                 ],
-                'overrideChildTca' => [
-                    'types' => [
-                        \TYPO3\CMS\Core\Resource\File::FILETYPE_IMAGE => [
-                            'showitem' => '--palette--;;filePalette',
-                        ],
-                    ],
-                ],
                 'minitems' => 0,
                 'maxitems' => 1,
             ],
@@ -241,15 +234,6 @@ return [
                 'allowed' => 'common-image-types',
                 'minitems' => 0,
                 'maxitems' => 1,
-                'overrideChildTca' => [
-                    'types' => [
-                        \TYPO3\CMS\Core\Resource\File::FILETYPE_IMAGE => [
-                            'showitem' => '
-                                --palette--;;imageoverlayPalette,
-                                --palette--;;filePalette',
-                        ],
-                    ],
-                ],
             ],
         ],
     ],
