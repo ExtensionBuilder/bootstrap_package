@@ -124,13 +124,6 @@ $GLOBALS['TCA']['tt_content']['columns'] = array_replace_recursive(
                 'appearance' => [
                     'createNewRelationLinkTitle' => 'LLL:EXT:frontend/Resources/Private/Language/Database.xlf:tt_content.asset_references.addFileReference',
                 ],
-                'overrideChildTca' => [
-                    'types' => [
-                        \TYPO3\CMS\Core\Resource\File::FILETYPE_IMAGE => [
-                            'showitem' => '--palette--;;filePalette',
-                        ],
-                    ],
-                ],
                 'minitems' => 0,
                 'maxitems' => 1,
             ],
